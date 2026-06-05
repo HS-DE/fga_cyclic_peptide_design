@@ -1,0 +1,1 @@
+﻿peptide_id,target,target_uniprot,target_patch,uniprot_region,hotspot_residues,core_sequence,core_length,final_synthesis_format,cyclization,mean_iptm,best_iptm,mean_interface_pae,best_interface_pae,peptide_plddt,interface_contacts,pose_consistency_rmsd,cys_cys_geometry,net_charge,hydrophobicity_flag,sequence_filter_pass,negative_screen_flag,final_score,priority,notes

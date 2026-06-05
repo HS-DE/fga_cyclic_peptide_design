@@ -1,0 +1,1 @@
+﻿peptide_id,core_sequence,patch_id,n_seeds,best_seed,mean_iptm,best_iptm,mean_interface_pae,best_interface_pae,mean_peptide_plddt,interface_contacts,pose_consistency_rmsd,patch_consistency_flag,cys_cys_geometry,complex_score,complex_score_pass,notes

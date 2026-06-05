@@ -1,0 +1,79 @@
+# Local Python and environment artifacts
+.conda/
+.pixi/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Logs and transient runtime files
+logs/
+*.log
+*.tmp
+*.bak
+*.swp
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local environment exports with machine-specific paths
+env/exports/
+
+# Raw/private spreadsheet inputs.
+# Keep generated FGA-only artifacts, but do not publish the original source Excel by default.
+data/input/*.xlsx
+
+# PDB structures are reproducible from public 3GHG and local preprocessing.
+# Keep them local unless a small curated structure is explicitly needed.
+data/structures/**/*.pdb
+
+# Model outputs are large and should not be committed wholesale.
+# Selected summary CSV/MD files are explicitly allowed below.
+results*colabfold*/
+results*boltz*/
+results/**
+!results/
+
+!results/raw_designs/
+!results/raw_designs/design_jobs.csv
+!results/raw_designs/FGA_unoptimized_candidates_skipped.csv
+!results/raw_designs/README_EXTERNAL_MODEL_RUN.md
+
+!results/filtered/
+!results/filtered/FGA_scored_candidates.csv
+!results/filtered/FGA_negative_screen_summary.csv
+
+!results/complex_predictions/
+!results/complex_predictions/FGA_complex_prediction_summary.csv
+
+!results/boltz_predictions_raw3ghg_template_all_seed1/
+!results/boltz_predictions_raw3ghg_template_all_seed1/boltz_job_skipped_candidates.csv
+!results/boltz_predictions_raw3ghg_template_all_seed1/FGA_boltz_complex_prediction_summary.csv
+
+!results/boltz_predictions_raw3ghg_template_msa_top30/
+!results/boltz_predictions_raw3ghg_template_msa_top30/source_candidates_top30.csv
+!results/boltz_predictions_raw3ghg_template_msa_top30/boltz_jobs.csv
+!results/boltz_predictions_raw3ghg_template_msa_top30/boltz_job_skipped_candidates.csv
+!results/boltz_predictions_raw3ghg_template_msa_top30/FGA_boltz_seed_scores.csv
+!results/boltz_predictions_raw3ghg_template_msa_top30/FGA_boltz_complex_prediction_summary.csv
+
+!results/colabfold_predictions_top30_seed1/
+!results/colabfold_predictions_top30_seed1/colabfold_jobs.csv
+!results/colabfold_predictions_top30_seed1/FGA_colabfold_seed_scores.csv
+!results/colabfold_predictions_top30_seed1/FGA_colabfold_complex_prediction_summary.csv
+
+!results/final/
+!results/final/FGA_design_report.md
+!results/final/FGA_top50_candidates.csv
+!results/final/FGA_top10_synthesis_priority.csv
+
+# Do not commit heavyweight structure prediction outputs.
+*.cif
+*_pae.png
+*_plddt.png
+*_coverage.png
